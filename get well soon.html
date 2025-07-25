@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Get Well Soon 💛</title>
+    <style>
+      body {
+        background-color: #fff4f4;
+        font-family: 'Comic Sans MS', cursive;
+        text-align: center;
+        padding-top: 80px;
+      }
+
+      h1 {
+        font-size: 38px;
+        color: #ff6699;
+      }
+
+      p {
+        font-size: 20px;
+        color: #444;
+        margin-top: 20px;
+      }
+
+      img {
+        width: 200px;
+        margin-top: 30px;
+      }
+
+      button {
+        margin-top: 40px;
+        font-size: 18px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: #ff99cc;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        background-color: #ff66aa;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hey [Friend's Name]! 💛</h1>
+    <p>I heard you’re not feeling well... 🥺<br>So I made this little website to cheer you up 💐</p>
+
+    <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" alt="Cute hug gif">
+
+    <br>
+    <button onclick="cheerUp()">Wanna feel better?</button>
+
+    <p id="response" style="display: none; color: #ff3399; font-size: 22px; margin-top: 30px;"></p>
+
+    <script>
+      function cheerUp() {
+        document.getElementById("response").innerText = "You are strong, loved, and you’re gonna be okay 💖";
+        document.getElementById("response").style.display = "block";
+      }
+    </script>
+  </body>
+</html>
